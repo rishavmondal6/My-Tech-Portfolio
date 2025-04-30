@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+    <style>
+        body {
+            background: #637474;
+            margin: 8px;
+            nav {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        nav li {
+            list-style: none;
+            display: inline-block;
+            margin: 10px;
+            margin-top: 30px;
+        }
+        nav li a {
+            text-decoration: none;
+            font-size: 18px;
+            color: white;
+            font-weight: bold;
+            position: relative;
+            margin-left: 1100px;
+        }
+        nav li a::after {
+            content: '';
+            width: 0;
+            height: 3px;
+            background: rgba(236, 182, 5, 0.952);
+            position: absolute;
+            left: 0;
+            bottom: -6px;
+            transition: 0.3s;
+        }
+        nav li a:hover::after {
+            width: 100%;
+        }
+        .sub-title{
+            margin-left: 601px;
+            display: inline-block;
+            position: relative;
+            padding-bottom: 5px;
+            color: white;
+            font-size: 40px;
+            font-weight: bold;
+        }
+        .sub-title::after {
+         content: '';
+         width: 100%;
+         height: 3px;
+         position: absolute;
+         left: 0;
+         bottom: 0;
+         background: linear-gradient(to right, red, blue); /* Gradient colors */
+        }
+        
+        .work-list{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        grid-gap: 10px;
+        margin-top: 20px;
+        padding: 0 10px;
+        }
+        
+        .work{
+            border-radius: 10px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .work img{
+            margin-left: 58px;
+            width: 72%;
+            display: block;
+            border-radius: 10px;
+            transition: transform 0.5s;
+        }
+
+        .layer {
+            width: 80%;
+            height: 0%;
+            background: linear-gradient(rgba(0,0,0,0.1), rgb(235, 25, 182));
+            border-radius: 0px;
+            position: absolute;
+            left: 9.5%;
+            bottom: 0;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            text-align: center;
+            transition: height 0.5s;
+        }
+        .layer h3{
+            font-weight: 1000%;
+            margin-bottom: 20px;
+            color: yellow;
+        }
+        .layer a{
+            color: black;
+            text-decoration: none;
+            font-size: 15px;
+            background: yellowgreen;
+            border-radius: 55%;
+            display: inline-block;
+            margin-top: 30px;
+            padding: 0% 10px;
+            transition: transform 0.5s;
+        }
+        .layer a:hover {
+            color: whitesmoke;
+            transform: translateY(-9px);
+        }
+        .work:hover img{
+            transform: scale(1.1);
+        }
+        .work:hover .layer{
+            height: 100%;    
+        }
+        @media (max-width: 600px) {
+            .container {
+                padding: 1px;
+            }
+            .sub-title {
+                font-size: 24px;
+                margin-left: 140px;
+                margin-top: -20px;
+            }
+            .work-list {
+                grid-template-columns: 100fr;
+            }
+            nav li a {
+                font-size: 18px;
+                margin-left: 6px;
+                
+            }
+            .layer{
+                left: 46px;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <nav>
+        <li><a href="index.html">Homepage</a></li>
+    </nav>
+    <div id="Projects">
+        <div class="container"> 
+            <h1 class="sub-title">Projects</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="Tic-Tac-Toe Game.....jpg" alt="">
+                    <div class="layer">
+                        <h3>Tic-Tac-Toe Game</h3>
+                        <p><b>Tic-Tac-Toe! A fun, fast-paced strategy <br>game—play, win, and outsmart your opponent in every move.</b></p>
+                        <a href="https://hilarious-crumble-824c55.netlify.app/"><h2>LINK</h2></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="Clinic Management System....jpg" alt="">
+                    <div class="layer">
+                        <h3>Clinic Management System</h3>
+                        <p><b>Smart Clinic Management: Effortless appointments, <br>patient records & billing for seamless healthcare.</b></p>
+                        <a href="#"><h2>LINK</h2></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="Ebus Management Based Current Location System....jpg" alt="">
+                    <div class="layer">
+                        <h3>Ebus Management Based Current Location System</h3>
+                        <p><b>Real-time Ebus tracking with GPS for seamless <br>navigation and efficient commuting.</b></p>
+                        <a href="https://clinquant-bienenstitch-f45632.netlify.app/"><h2>LINK</h2></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

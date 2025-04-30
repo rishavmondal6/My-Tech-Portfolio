@@ -1,0 +1,142 @@
+*{
+margin: 0;
+padding: 0;
+font-family: 'Poppins'; sans-serif;
+box-sizing: border-box;
+
+}
+
+body{
+    background: #73aca4;
+    }
+
+  #header {
+    width: 100%;
+    height: 100vh;
+    background-image: url(Profile\ Picture..png);
+    background-size: cover;
+    background-position: center; 
+  }
+
+ .container {
+    padding: 30px 7%;
+ }
+
+ nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+ }
+
+ nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+ }
+
+ nav ul li a { 
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+    position: relative;
+ }
+ 
+ nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: rgba(236, 182, 5, 0.952) ;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.3s;
+ }
+
+ nav ul li a:hover::after {
+    width: 100%;
+ }
+
+.header-text{
+    margin-top: 30px;
+    font-size: 32px;
+ }
+
+.header-text h1{
+    font-size: 40px;
+    margin-top: 20px;
+ }
+
+ .header-text h1 span {
+    color: rgb(10, 69, 80);
+ }
+.copyright{
+   width: 13%;
+   font-weight: 300;
+   padding: 115px px;
+   color: whitesmoke;
+   text-decoration: none;
+   font-size: 20px;
+   background: black;
+   border-radius: 10%;
+   display: inline-block;
+   margin-top: 210px;
+}
+
+@media only screen and (max-width: 600px){
+   #header{
+      background-image: url(Short\ screen\ photo..jpg);
+   }
+   .copyright{
+      width: 35%;
+      font-weight: 100;
+      border-radius: 10%;
+      color: whitesmoke;
+      text-decoration: none;
+      font-size: 15px;
+      background: black;
+      margin-top: -1200px;
+      }
+   .header-text{
+      margin-top: 40%;
+      font-size: 20px;
+      color: aqua;
+   }
+   .header-text h1{
+      font-size: 30px;
+      margin-bottom: 50px;
+   }
+   .container {
+      padding: 5px 2%;
+   }
+   .header-text h1 span{
+      color: red;
+   }
+   nav ul li a b{ 
+      color: aqua;
+      margin-right: 230px;
+      font-size: 15px;
+   }
+   nav ul li a::after{
+      content: '';
+      width: 0;
+      height: 3px;
+      background: rgba(236, 182, 5, 0.952) ;
+      position: absolute;
+      left: 0;
+      bottom: -6px;
+      transition: 0.1s;
+   }
+  
+   nav ul li a:hover::after {
+      width: 18%;
+   }
+   
+   
+}
+
+
+
+
+
+  
